@@ -1,0 +1,102 @@
+.user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f8f5ed;
+    min-height: 100vh;
+    margin-top: 100px; /* Adjusted for better positioning */
+}
+
+.profile-card {
+    background-color: #f8f5ed;
+    border: 2px solid #800000;
+    border-radius: 12px;
+    padding: 30px 40px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.profile-header h2 {
+    color: #800000;
+    font-size: 28px;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.label {
+    font-weight: bold;
+    color: #800000;
+    margin-right: 8px;
+}
+
+/* Profile Buttons Container */
+.profile-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Edit & Logout Buttons */
+.edit-btn, .logout-btn,.save-btn {
+    background-color: #D4AF37;
+    color: #800000;
+    padding: 12px 22px; /* Increased padding for better click area */
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #D4AF37; /* Prevents shifting */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 130px; /* Ensures equal width */
+    text-align: center;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15); /* Slight shadow for depth */
+}
+
+.edit-btn:hover, .logout-btn:hover ,.save-btn:hover {
+    background-color: #800000;
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile-card {
+        padding: 20px;
+    }
+
+    .profile-header h2 {
+        font-size: 24px;
+    }
+
+    .edit-btn, .logout-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+        min-width: 120px;
+    }
+
+    .profile-info {
+        font-size: 14px;
+    }
+}
